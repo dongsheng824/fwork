@@ -1,0 +1,20 @@
+mybatis-generator自动生成:
+1、pom配置插件
+2、配置generatorConfig.xml，配置表和对象对应关系
+3、选择项目中的pom.xml配置文件 右键run --》maven bulid --》在对话框中的Goals 输入mybatis-generator:generate
+4、重新生成：把model和mapper两个包的文件删除完，再执行mybatis-generator:generate
+
+CREATE TABLE `result_page` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `URL` varchar(255) DEFAULT NULL,
+  `TEXT` varchar(5000) DEFAULT NULL,
+  `TYPE` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `visited_page` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `URL` varchar(255) DEFAULT NULL,
+  `TEXT` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

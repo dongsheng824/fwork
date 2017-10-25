@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hhlike.fwork.dao.TestDao">
+
+	<resultMap id="ContentItemVo" type="com.hhlike.fwork.vo.ContentItemVo">
+		<result column="ID" jdbcType="BIGINT" property="userId" />
+		<result column="ACCOUNT" jdbcType="VARCHAR" property="account" />
+		<result column="TITLE" jdbcType="VARCHAR" property="title" />
+		<result column="CONTENT" jdbcType="VARCHAR" property="content" />
+		<result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+	</resultMap>
+	
+	<select id="selectUser" parameterType="java.lang.Long" resultMap="ContentItemVo">
+		select a.id, a.account, b.title, b.content, b.address
+		from user a, content_item b
+		where a.id = b.user_id and a.id = #{id}
+	</select>
+
+</mapper>

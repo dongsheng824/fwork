@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 别名 -->
+	<typeAliases>
+		<!-- 
+		<typeAlias alias="ResultPage" type="com.hhlike.fwork.model.ResultPage"/>
+		 -->
+	</typeAliases>
+	<!-- 加载映射文件 -->
+	<mappers>
+		<!-- 
+		<mapper resource="com/hhlike/fwork/model/ResultPageMapper.xml"/>
+		<mapper resource="com/hhlike/fwork/model/VisitedPageMapper.xml"/>
+		<mapper resource="com/hhlike/fwork/model/CityMapper.xml"/>
+		<mapper resource="com/hhlike/fwork/model/UserMapper.xml"/>
+		<mapper resource="com/hhlike/fwork/model/CatalogMapper.xml"/>
+		 -->
+	</mappers>
+</configuration>
